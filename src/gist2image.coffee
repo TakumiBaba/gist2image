@@ -2,9 +2,8 @@ page = require('webpage').create()
 system = require 'system'
 args = system.args
 
-console.log args
-
 url = args[1]
+format = args[2]
 
 page.open url, (status) ->
   if status is 'success'
@@ -12,5 +11,7 @@ page.open url, (status) ->
       div = document.getElementsByClassName(s)[0]
       return div.getBoundingClientRect()
     , 'file-data'
-    page.render args[2]
-    phantom.exit()
+    page.render "temp", {format: format}
+    phantom.exit 0
+  else
+    phantom.exit 1
