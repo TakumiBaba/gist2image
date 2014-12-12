@@ -1,21 +1,12 @@
-# nodeinit
+# gist2png
 
-![](https://travis-ci.org/geta6/nodeinit.png?branch=master)
+## usage
 
-node_moduleを開発し始めるためのベース
+    % npm install -g gist2png
+    % gist2png <url> <filename>
 
-# usage
+## Requirements
 
-    $ git clone https://github.com/geta6/nodeinit
-    $ cd nodeinit
-    $ npm i
-    $ npm i -g grunt-cli
-    $ grunt
-
-# tasks
-
-* lint coffee
-* build coffee (`src` to `lib`, recursive)
-* mocha test (`tests/test.coffee`)
-* watching file changes
-* failure notification
+- Node.js
+- phantomjs
+- imagemagick

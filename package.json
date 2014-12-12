@@ -8,6 +8,9 @@
   "scripts": {
     "test": "grunt test"
   },
+  "bin": {
+    "gist2image": "./bin/gist2image"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
@@ -26,6 +29,7 @@
     "mocha": "^1.21.4"
   },
   "dependencies": {
-    "coffee-script": "^1.8.0"
+    "coffee-script": "^1.8.0",
+    "commander": "^2.5.0"
   }
 }
